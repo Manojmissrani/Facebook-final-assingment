@@ -8,8 +8,6 @@ firebase.auth().onAuthStateChanged((user) => {
           // loader
           var user = document.getElementById("users");
           document.getElementById("loaderdiv").style.display = "none";
-          //  user.innerHTML= ""
-
           users.forEach((usersdetail) => {
             var Name =usersdetail.data().firstName + " " + usersdetail.data().lastName;
             var userdetails = document.createElement("div");
@@ -116,7 +114,7 @@ firebase.auth().onAuthStateChanged((user) => {
       window.location.assign("./email.html");
     }
   } else {
-    window.location.assign("./Login.html");
+    window.location.assign("./login.html");
   }
 });
 const logout = () => {

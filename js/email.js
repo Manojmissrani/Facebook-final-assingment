@@ -1,4 +1,4 @@
-let email = document.getElementById("emailid");
+let email = document.getElementById("email");
 let message = document.getElementById("message");
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {

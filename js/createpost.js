@@ -5,7 +5,6 @@ let fileType = "";
 var progressDiv = document.getElementById("progressdiv");
 var progressbar = document.getElementById("progressbar");
 var done = document.getElementById("done");
-
 let uid;
 let alluser = [];
 let userimg = document.getElementById("userimg");

@@ -18,7 +18,6 @@ let uid;
 let updateurl;
 let alluser = [];
 let allposts = [];
-
 // changecoverpicture
 function changecoverpicture(event) {
   var uploadTask = firebase
@@ -404,6 +403,7 @@ firebase
                 footerdiv.appendChild(likebutton);
                 likebutton.setAttribute("class", "likebutton");
 
+                //like icon 
                 var likeicon = document.createElement("i");
                 likebutton.appendChild(likeicon);
                 likeicon.setAttribute("class", "fa-regular fa-thumbs-up");

@@ -32,7 +32,7 @@ const SignUp = () => {
     message.style.color = "red";
     email.focus();
   } else if (!email.value.match(match)) {
-    message.innerHTML = "Please Enter Correct Email Address";
+    message.innerHTML = "Please Enter Valid Email Address";
     message.style.color = "red";
     email.focus();
   } else if (password.value === "") {
@@ -48,7 +48,7 @@ const SignUp = () => {
     message.style.color = "red";
     repassword.focus();
   } else if (repassword.value !== password.value) {
-    message.innerHTML = "Password donot match";
+    message.innerHTML = "Password do not match";
     message.style.color = "red";
     repassword.focus();
   } else {

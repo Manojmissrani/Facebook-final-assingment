@@ -127,7 +127,7 @@ input {
 #editabledatadiv {
   padding: 5px;
   overflow: auto;
-  height: 100px;
+  height: 160px;
 }
 #userprofilebutton {
   background-color: blue;
@@ -178,7 +178,7 @@ input {
 }
 #showposts {
   height: auto;
-  max-height: 18vh;
+  max-height: 160px;
   width: 100% !important;
   overflow: auto;
 }
@@ -198,6 +198,17 @@ input {
   border-radius: 10px;
   box-shadow: rgb(203, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.updatebnt {
+  color: green;
+  min-height: 15px;
+  font-size: 15px;
+}
+#done {
+  color: green;
+  min-height: 15px;
+  font-size: 15px;
+  display: none;
 }
 .commentinput {
   width: 85% !important;

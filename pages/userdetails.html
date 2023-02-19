@@ -28,40 +28,49 @@
       <div class="container container-sm-12">
         <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12 col-12">
           <div class="nav col-12">
+
             <li class="homeicons col-2">
-              <a href="./home.html"><i class="fa-solid fa-house icons"></i></a>
+              <a href="./home.html">
+              <i class="fa-solid fa-house icons"></i>
+            </a>
             </li>
+
             <li class="friendicons col-2">
-              <a href="./allfriends.html"
-                ><i class="fa-solid fa-users icons"></i
-              ></a>
+              <a href="./allfriends.html">
+                <i class="fa-solid fa-users icons"></i>
+              </a>
             </li>
+
             <li class="videosicon col-2">
-              <a href="./videos.html"
-                ><i class="fa-solid fa-video icons"></i
-              ></a>
+              <a href="./videos.html">
+                <i class="fa-solid fa-video icons"></i>
+              </a>
             </li>
+
             <li class="createposticon col-2">
-              <a href="./createpost.html"
-                ><i class="fa-solid fa-circle-plus icons"></i
-              ></a>
+              <a href="./createpost.html">
+                <i class="fa-solid fa-circle-plus icons"></i>
+              </a>
             </li>
+
             <li class="userdetailsicon col-2">
-              <a href="./userdetails.html"
-                ><i
-                  class="fa-solid fa-user icons"
-                  style="background-color: #f0f2f5; color: blue"
-                ></i
-              ></a>
+              <a href="./userdetails.html">
+                <i class="fa-solid fa-user icons" style="background-color: #f0f2f5; color: blue"></i>
+              </a>
             </li>
+
             <li class="logouticon col-2" onclick="logout()">
-              <a><i class="fa-solid fa-right-from-bracket icons"></i
-              ></a>
+              <a>
+                <i class="fa-solid fa-right-from-bracket icons"></i>
+              </a>
             </li>
+            
           </div>
 
           <div id="createpostdivmain" class="col-12">
             <div id="userdetails">
+
+              <!-- user cover picture -->
               <div id="usercoverpicturediv">
                 <img src="https://thumbs.dreamstime.com/b/welcome-25626493.jpg" alt="" id="usercoverimg" class="col-12">
                 <label for="inputforusercoverimg" id="choosecoverimg" class="uploadbuttons">
@@ -69,6 +78,7 @@
                 <input type="file" id="inputforusercoverimg" style="visibility: hidden;"
                   onchange="changecoverpicture(event)">
 
+              <!-- user profile picture -->
                 <div id="userprofilepicturediv">
                   <img src="./icons/user.png" alt="" id="userprofileimg" class="col-4 largeprofilepicture">
                   <label for="inputforuserprofileimg" id="chooseprofileimg" class="uploadbuttons">
@@ -103,42 +113,61 @@
 
 
               <div class="buttons col-12">
+
+                <!-- Profile Button -->
                 <div id="userprofilebutton" class="usersdetailsbuttons ">Profile</div>
+                
+                <!-- Posts Button -->
                 <div id="postsbutton" class="usersdetailsbuttons">Posts</div>
               </div> 
               <div id="editabledatadiv">
+
+                <!-- First Name -->
                 <label for="firstname" class="labels">First Name:</label>
                 <input type="text" id="firstname" class="userdatainputs">
+
+                <!-- Last Name -->
                 <label for="lastname" class="labels">Last Name:</label>
                 <input type="text" id="lastname" class="userdatainputs">
-                <label for="mobileno" class="labels">Mobile No:</label>
+                
+                <!-- Mobile number -->
+                <label for="mobileno" class="labels">Mobile number:</label>
                 <input type="number" id="mobileno" class="userdatainputs">
+                
+                <!-- Email Address -->
                 <label for="emailaddress" class="labels">Email Address:</label>
                 <input type="email" id="emailaddress" class="userdatainputs">
+
+                <!-- Description -->
                 <label for="userdescription" class="labels">Description:</label>
                 <textarea id="userdescription" rows="5" placeholder="Description(Optinal)"></textarea>
+
+                <!-- message -->
                 <p id="message"></p>
                 <div class="col-12" style="display: flex; align-items: center;
                 justify-content: flex-end; margin-top: 10px;">
+
+                <!-- Update Button -->
                   <button id="updatedatabutton" onclick="update()">Update</button>
                 </div>
               </div>
               
             </div>
 
+            <!-- Data not avilable -->
             <div id="currentuserpostsdiv">
-    
               <div id="messagediv" style="justify-content:flex-start;padding: 5px 10px;display:none;">
                 <h1 id="h1">Data not avilable</h1>
               </div>
+
+            <!-- update post -->
               <div id="showposts">
                 <div id="loaderdiv">
                   <img src="./icons/Spin-1.4s-217px (1).png" id="loud">
                 </div>
             </div>
 
-
-            <!-- update post -->
+            <!-- update user detail -->
             <div class="maincreate " id="maincreate"> 
               <div id="userdiv">
 
@@ -149,38 +178,44 @@
                 rows="5"
                 placeholder="Type Post here...."
               ></textarea>
+
               <label for="postfiles" id="imagesforpost"
                 >UPLOAD IMAGE OR VIDEO
                 <img
                   src="./icons/upload-button.png"
                   alt=""
-                  id="uploadbuttonicon"
-              /></label>
+                  id="uploadbuttonicon"/>
+              </label>
+
               <input
                 type="file"
                 id="postfiles"
                 onchange="postfiles(event)"
                 style="visibility: hidden"
-              /><br><br>
+              />
+              <br>
+              <br>
               <!-- Progressbar -->
               <div class="progress" id="progressdiv1" style="display: none;">
                 <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="progressbar1"></div>
               </div>
-              <p id="done" style="color: green;min-height: 15px;font-size: 15px; display: none;">Done</p>
+              <p id="done">Done</p>
+
               <div id="uploadedmssage">
-  
-                <p style="color: green;min-height: 15px;font-size: 15px;">Update</p>
+                <p class="updatebnt">Update</p>
               </div>
               
               <div id="submitbuttondiv"  class="col-12">
                 <a  id="updatepostbtn" class="col-7 createpostbtn" style="text-decoration: none;">Update</a>
               </div>
-              </div>
-
+            </div>
           </div>
         </div>
       </div>
-    </div></div></div></div>
+    </div>
+  </div>
+</div>
+</div>
   </body>
   <link rel="stylesheet" href="./../css/nav.css" />
   <link rel="stylesheet" href="./../css/userdetails.css" />
