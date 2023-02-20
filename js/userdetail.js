@@ -233,7 +233,7 @@ firebase
             let commentarry = allposts[i].comments;
             let postmain = document.createElement("div");
             showposts.appendChild(postmain);
-            postmain.setAttribute("class", "postmain");
+            postmain.setAttribute("class", "postmain mmmm");
             //post header
             let postheader = document.createElement("div");
             postmain.appendChild(postheader);
