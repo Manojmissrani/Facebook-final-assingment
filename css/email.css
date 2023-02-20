@@ -37,9 +37,10 @@ img {
   margin-bottom: 5px;
 }
 #bold{
+  color: #3360f8;
     font-weight: bold;
 }
-#emailid{
+#email{
     color: #3360f8;
     font-weight: bold;
 }
