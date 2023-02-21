@@ -271,6 +271,13 @@ input {
   .userdatainputs {
     font-size: 4vw;
   }
+  #usercoverimg{
+    height: 25vh;
+  }
+  #usercoverpicturediv {
+    position: relative;
+    height: 25vh;
+  }
 }
 
 @media only screen and (max-width: 483px) {
@@ -281,10 +288,10 @@ input {
     font-size: 13px;
   }
   #editabledatadiv {
-    height: 250px !important;
+    height: 180px !important;
   }
   #showposts{
-    height: 250px !important;
+    height: 200px !important;
   }
   .postmain{
     height: 250px !important;
