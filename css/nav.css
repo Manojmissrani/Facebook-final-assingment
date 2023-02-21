@@ -99,3 +99,19 @@ textarea::-webkit-scrollbar-thumb {
 #email,#emailaddress{
   text-transform: lowercase;
 }
+
+
+@media only screen and (max-width: 500px) {
+  #container{
+padding-top: 5px !important;
+  }
+  .maindiv{
+    padding: 0px;
+  }
+  .commentinput{
+    width: 85% !important;
+  }
+  .icons{
+    padding: 6px 20px;
+  }
+}

@@ -274,14 +274,19 @@ input {
 }
 
 @media only screen and (max-width: 483px) {
-  .uploadbuttons > img {
-    height: 13px;
-    width: 13px;
-  }
   .uploadbuttons {
     padding: 3px 8px;
   }
   .currentusercreatepost > input {
     font-size: 13px;
+  }
+  #editabledatadiv {
+    height: 250px !important;
+  }
+  #showposts{
+    height: 250px !important;
+  }
+  .postmain{
+    height: 250px !important;
   }
 }

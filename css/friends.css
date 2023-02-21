@@ -13,7 +13,6 @@
     overflow: auto;
 }
 
-
 #users::-webkit-scrollbar-track {
   border: 1px solid #cbcbcb;
   background-color: #fffdfd;
@@ -30,7 +29,6 @@
   background-color: #3360f8;
   border-radius: 10px;
 }
-
 
 #userdetailsdiv{
     display: flex;
