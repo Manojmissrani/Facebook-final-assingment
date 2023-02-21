@@ -271,7 +271,7 @@ input {
   .userdatainputs {
     font-size: 4vw;
   }
-  #usercoverimg{
+  #usercoverimg {
     height: 25vh;
   }
   #usercoverpicturediv {
@@ -290,10 +290,10 @@ input {
   #editabledatadiv {
     height: 180px !important;
   }
-  #showposts{
+  #showposts {
     height: 200px !important;
   }
-  .postmain{
+  .postmain {
     height: 250px !important;
   }
 }
